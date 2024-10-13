@@ -5,7 +5,7 @@ WORKDIR /app
 # คัดลอกเฉพาะไฟล์ที่ใช้ติดตั้ง dependencies ก่อน
 COPY package*.json ./
 
-# ติดตั้ง dependencies
+# ติดตั้ง dependencies  image ใน json ทั้งหมด
 RUN npm ci
 
 # คัดลอกโค้ดที่เหลือเข้าไป
